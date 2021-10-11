@@ -34,16 +34,3 @@
     border-width: 0px;
     margin-top: 5px;
 }
-
-#nome{
-    font-size: 4.75rem;
-    text-align: center;
-    margin-top: 17.5rem;
-    margin-left: auto;
-    margin-right: auto;
-    color: rgb(255, 246, 118);
-    background-size: all;
-    border-radius: 5rem;
-    font-family: "Opera-Lyrics-Smooth";
-    text-shadow: 0 1px black, 0 1px black, 0 1px black, 0 1px black;
-}
