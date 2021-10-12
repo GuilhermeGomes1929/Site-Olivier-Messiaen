@@ -1,11 +1,16 @@
-#conteudo{
+html, body{
+    height: 100%;
     margin: 0px;
-    background-color: rgba(63, 58, 0, 0.644);
+}
+
+#conteudo{
     background-image: url(../images/orgaoFoto.jpg);
-    background-size: 86rem 45rem;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: 1.5rem;
+    background-position-y: -2.5rem;
+    background-attachment: fixed;
+    background-color: rgba(63, 58, 0, 0.644);
     background-blend-mode: soft-light;
     background-blend-mode: darken;
 }
@@ -33,4 +38,36 @@
     background-color: rgba(255, 255, 255, 0);
     border-width: 0px;
     margin-top: 5px;
+}
+
+#bioFoto{
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+    border-radius: 0.4rem;
+}
+
+.langIndicador{
+    padding-left: 1rem;
+    margin-left: 1rem;
+}
+
+.bioInfo{
+    display: flex;
+    margin-top: 5rem;
+}
+
+#bioTextoFlex{
+    display: flex;
+    flex-direction: column;
+}
+
+.bioTexto{
+    color: rgb(255, 246, 118);
+    background-color: rgb(63, 25, 0);
+    font-size: large;
+    padding: 3rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 5rem;
+    border-radius: 0.4rem;
 }
