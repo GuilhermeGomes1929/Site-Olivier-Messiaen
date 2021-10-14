@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/admin.css">
+    <title>Página admin</title>
+</head>
+<body>
+
+    <header class="cabecalho">
+
+
+        <a class="itemOutrasPaginas" href="perfil.html"> Perfil </a>
+        <a class="itemOutrasPaginas" href="infos.html"> Informações </a>
+        <a class="itemOutrasPaginas" href="obras.html"> Obras </a>
+        <a class="itemOutrasPaginas" href="pPrincipal.html">Logout</a>
+
+    </header>
+    <main class="mainContent">
+
+        <div class="container">
+    
+            <h1 class="titulo">Informações do perfil</h1>
+            <form class="forms">
+    
+                <div class="itemForm">
+                    <div class="descricaoCampo">
+                        <label><strong>Nome de usuário:</strong></label>
+                    </div>
+                    <div class="campo">
+                        <input type="text" name="nomeUsuario" id="nomeUsuario" value="Olivier Messiaen"/>        
+                    </div>
+                </div>
+    
+                <div class="itemForm">
+                    <div class="descricaoCampo">
+                        <label><strong>E-mail:</strong></labe>
+                    </div>
+                    <div class="campo">
+                        <input type="email" name="emailUsuario" id="emailUsuario" value="olivierMessiaen@hotmail.com"/>
+                    </div>
+                </div>
+    
+                <button class="buttonForm" type="submit"><strong>Editar</strong></button>
+    
+        </div>      
+
+        <div class="container">
+        </form>
+        <h1 class="titulo">Redefinir senha</h1>
+        <form class="forms">
+
+            <div class="itemForm">
+                <div class="descricaoCampo">
+                    <label><strong>Senha antiga:</strong></label>
+                </div>
+                <div class="campo">
+                    <input type="password" name="passAntigaUsuario" id="passAntigaUsuario"/>        
+                </div>
+            </div>
+
+            <div class="itemForm">
+                <div class="descricaoCampo">
+                    <label><strong>Senha nova:</strong></labe>
+                </div>
+                <div class="campo">
+                    <input type="password" name="passNovaUsuario" id="passNovaUsuario"/>
+                </div>
+            </div>
+
+            <button class="buttonForm" type="submit"><strong>Editar</strong></button>
+
+        </form>
+        </div>
+    </main>
+    
+</body>
+</html>
