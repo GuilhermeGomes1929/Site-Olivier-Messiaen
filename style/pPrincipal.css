@@ -2,10 +2,10 @@
     margin: 0px;
     background-color: rgba(63, 58, 0, 0.644);
     background-image: url(../images/orgaoFoto.jpg);
-    background-size: 86rem 45rem;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: 1.5rem;
+    background-position-y: -2.5rem;
     background-blend-mode: soft-light;
     background-blend-mode: darken;
 }
