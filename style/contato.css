@@ -1,3 +1,17 @@
+@font-face {
+    font-family: "Opera-Lyrics-Smooth";
+    src: url(/fontes/OperaLyricsSmooth-OOJo.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Regatto";
+    src: url(/fontes/RegattoBold-lgVM0.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 #conteudo{
     margin: 0px;
     background-color: rgba(63, 58, 0, 0.644);
