@@ -1,102 +1,58 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/admin.css">
-    <title>Página admin</title>
-</head>
-<body>
+<html>
+    <head>
+        <meta charset="utf-8" lang="pt-br">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Obras </title>
+        <link rel="stylesheet" href="style/obras.css">
+    </head>
 
-    <header class="cabecalho">
+    <body>
 
+        <div id="conteudo">
 
-        <a class="itemOutrasPaginas" href="perfil.html"> Perfil </a>
-        <a class="itemOutrasPaginas" href="infos.html"> Informações </a>
-        <a class="itemOutrasPaginas" href="obras.html"> Obras </a>
-        <a class="itemOutrasPaginas" href="pPrincipal.html">Logout</a>
+            <header class="outrasPaginas">
+                <a class="itemOutrasPaginas" href="pPrincipal.html"> Página Principal </a>
+                <a class="itemOutrasPaginas" href="bio.html"> Biografia </a>
+                <a class="itemOutrasPaginas" href="obras.html"> Obras </a>
+                <a class="itemOutrasPaginas" href=""> Contato </a>
+                <button class="botaoPesquisa" >
+                    <img src="images/Search-icon.png" alt="Pesquisa" height="20px" width="20px">
+                </button>
+            </header>
 
-</header>
-
-<main class="mainContent">
-
-    <div class="container">
-
-        <h1 class="titulo">Obras</h1>
-        <form class="forms">
-
-            <div class="itemForm">
-                <div class="descricaoCampo">
-                    <label><strong>Id da obra:</strong></label>
-                </div>
-                <div class="campo">
-                    <input type="number" name="idObra" id="idObra" min="0"/>        
-                </div>
-            </div>
-
-            <div class="itemForm">
-                <div class="descricaoCampo">
-                    <label><strong>Título:</strong></labe>
-                </div>
-                <div class="campo">
-                    <input type="text" name="tituloObra" id="tituloObra"/>
-                </div>
-            </div>
-
-            <div class="itemForm">
-                <div class="descricaoCampo">
-                    <label><strong>Data de criação:</strong></label>
-                </div>
-                <div class="campo">
-                    <input type="date" name="dataObra" id="dataObra"/>
-                </div>
-            </div>
-
-            <div class="itemForm">
-                <div class="descricaoCampo">
-                    <label><strong>Descrição:</strong></label>
-                </div>
-                <div class="campo">
-                    <textarea name="descricaoObra" id="descricaoObra"></textarea>
+            
+            <div class="listaObras">
+                <div class="heading"><h1>Obras de Olivier Messiaen</h1></div>
+                <div class="obrasBloco">
+                    <div class="umaObra">
+                        <h2 class="tituloObra">Le Banquet Céleste (1928)</h2>
+                        <h3 class="comentarioObra">Com um estilo inovador e original, essa foi sua primeira obra, composta antes mesmo de terminar seus estudos.</h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/8jkAyDea7UE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="umaObra">
+                        <h2 class="tituloObra">Quatuor Pour les Fins du Temps (1941)</h2>
+                        <h3 class="comentarioObra">Na Segunda Guerra Mundial, entre 1940 e 1942, foi prisioneiro dos alemães, no campo de concentração de Gorlitz, onde compôs e apresentou essa obra, que é a sua mais famosa.</h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jXxmvsllhCg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="umaObra">
+                        <h2 class="tituloObra">Trois Petites Liturgies de la Présence Divine (1944)</h2>
+                        <h3 class="comentarioObra">Essa obra em especial, deixa bem claro sua profunda fé religiosa.</h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/pdON4zDTpR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                        <div class="umaObra">
+                        <h2 class="tituloObra">Turangalîla-Symphonie (1948) </h2>
+                        <h3 class="comentarioObra">O seu mais importante trabalho para orquestra.</h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/8PjyCpRKDrk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="umaObra">
+                        <h2 class="tituloObra">Catalogue d'Oiseaux (1959)</h2>
+                        <h3 class="comentarioObra">Obra musical complexa e inspirada na sonoridade das aves.</h3> 
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/b1ANOcLhuXM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
-
-            <div class="itemForm">
-                <div class="descricaoCampo">
-                    <label><strong>Ação:</strong></label>
-                </div>
-                <div class="campo">
-                    <input type="radio" name="acaoObra" id="acaoObraEditar" checked/>Editar
-                    <input type="radio" name="acaoObra" id="acaoObraCriar"/>Criar
-                </div>
-            </div>
-
-            <button class="buttonForm" type="submit"><strong>Enviar</strong></button>
-
-        </form>
-
-
-    </div>
-
-    
-           
-</main>
-
-<script>
-    editBtn = document.getElementById("acaoObraEditar");
-    createBtn = document.getElementById("acaoObraCriar");
-    idObra = document.getElementById("idObra");
-
-    editBtn.onclick = () =>{
-        idObra.disabled = false;
-    }
-
-    createBtn.onclick = () =>{
-        idObra.disabled = true;
-        idObra.value = null;
-    }
-</script>
-    
-</body>
+        </div>
+    </body>
 </html>
