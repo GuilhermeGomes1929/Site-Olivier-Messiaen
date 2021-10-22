@@ -12,6 +12,11 @@
     font-style: normal;
 }
 
+html, body{
+    height: 100%;
+    margin: 0px;
+}
+
 #conteudo{
     margin: 0px;
     background-color: rgba(63, 58, 0, 0.644);

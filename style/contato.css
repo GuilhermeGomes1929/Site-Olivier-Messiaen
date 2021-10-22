@@ -12,14 +12,19 @@
     font-style: normal;
 }
 
+html, body{
+    height: 100%;
+    margin: 0px;
+}
+
 #conteudo{
     margin: 0px;
     background-color: rgba(63, 58, 0, 0.644);
     background-image: url(../images/orgaoFoto.jpg);
-    background-size: 86rem 22rem;
-    background-repeat: repeat-x;
-    background-position-x: 1,5rem;
-    background-position-y: 1,5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -2.5rem;
     background-blend-mode: soft-light;
     background-blend-mode: darken;
 }
@@ -49,18 +54,12 @@
     margin-top: 5px;
 }
 
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
 #nome{
-    margin: 0px;
-    font-size: 3.5rem;
-    text-align: top;
-    margin-top:9rem;
+    font-size: 2.3rem;
+    text-align: center;
+    margin-top: 9rem;
+    margin-left: auto;
+    margin-right: auto;
     color: rgb(255, 246, 118);
     background-size: all;
     border-radius: 5rem;
@@ -68,48 +67,30 @@
     text-shadow: 0 1px black, 0 1px black, 0 1px black, 0 1px black;
 }
 
-#email{
-    font-size: 2.5rem;
-    text-align: top;
-    margin-top:5rem;
-    color: rgb(10, 10, 10);
-    background-size: all;
-    border-radius: 5rem;
-    font-family: "Opera-Lyrics-Smooth";
-    text-shadow: 0 1px black, 0 1px black, 0 1px black, 0 1px black;
+.botoesContato{
+    display: flex;
 }
 
-    #numero{
-    font-size: 2.5rem;
-    text-align: top;
-    margin-top: 4rem;
-    color: rgb(10, 10, 10);
-    background-size: all;
-    border-radius: 5rem;
-    font-family: "Opera-Lyrics-Smooth";
-    text-shadow: 0 1px black, 0 1px black, 0 1px black, 0 1px black;
-    }
+.umBotao{
+    background: transparent;
+    border-width: 0;
+    margin-right: 2rem;
+}
 
-    #contato{
-    font-size: 2.5rem;
-    text-align: top;
-    margin-top:8rem;
-    color: rgb(10, 10, 10);
-    background-size: all;
-    border-radius: 5rem;
-    font-family: "Opera-Lyrics-Smooth";
-    text-shadow: 0 1px black, 0 1px black, 0 1px black, 0 1px black;
-    }
+.imagemBotao{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+}
 
-    
+#contatosEmTexto{
+    display: flex;
+}
 
-    
+#email{
+    display: flex;
+}
 
-
-
-
-
-    
-
-
-
+#telefone{
+    display: flex;
+}
