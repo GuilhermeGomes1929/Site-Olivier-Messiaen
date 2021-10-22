@@ -48,16 +48,16 @@ html, body{
 }
 
 .botaoPesquisa{
+    background: transparent;
+    border-width: 0;
     margin-right: 2rem;
-    background-color: rgba(255, 255, 255, 0);
-    border-width: 0px;
     margin-top: 5px;
 }
 
 #nome{
-    font-size: 4.75rem;
+    font-size: 2rem;
     text-align: center;
-    margin-top: 17.5rem;
+    margin-top: 9rem;
     margin-left: auto;
     margin-right: auto;
     color: rgb(255, 246, 118);
@@ -65,4 +65,19 @@ html, body{
     border-radius: 5rem;
     font-family: "Opera-Lyrics-Smooth";
     text-shadow: 0 1px black, 0 1px black, 0 1px black, 0 1px black;
+}
+
+.umContato{
+    background: transparent;
+    border-width: 0;
+    margin-right: 2rem;
+}
+
+.imagemBotao{
+    height: 5rem;
+    width: 5rem;
+}
+
+.facebook{
+    border-radius: 0.5rem;
 }
