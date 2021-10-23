@@ -24,14 +24,14 @@ html, body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: -2.5rem;
+    background-position-y: center;
     background-blend-mode: soft-light;
     background-blend-mode: darken;
 }
 
 .outrasPaginas{
     height: 3.5rem;
-    background-color: rgb(63, 25, 0);
+    background-color: rgba(63, 25, 0, 0.781);
     display: flex;
     justify-content: end;
     align-items: center;
