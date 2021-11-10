@@ -1,24 +1,24 @@
-import { BrowserRouter as Router,
-   Routes,
-    Route,} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import DefaultHeader from './components/DefaultHeader';
-import ContatoPage from './pages/ContatoPage';
 import Home from './pages/Home';
-import PageObras from './pages/ObrasPAge';
-
+import BioPage from './pages/BiografiaPage';
+import ObrasPage from './pages/ObrasPage';
+import ContatoPage from './pages/ContatoPage';
 function App() {
-  
+
   return (
    <Router>
-     <DefaultHeader/>
-     <Routes>
-      <Route exact path="/" element={<Home/>}>
-      </Route>
-      <Route path="/obras" element={<PageObras/>}>
-      </Route>
-      <Route path="/contato" element={<ContatoPage/>}>
-      </Route>
-     </Routes>
+      <DefaultHeader/>
+      <Routes>
+        <Route exact path="/" element={<Home/>}>
+        </Route>
+        <Route exact path="/biografia" element={<BioPage/>}>
+        </Route>
+        <Route path="/obras" element={<ObrasPage/>}>
+        </Route>
+        <Route path="/contato" element={<ContatoPage/>}>
+        </Route>
+      </Routes>
    </Router>
   );
 }

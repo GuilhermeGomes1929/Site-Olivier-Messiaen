@@ -1,9 +1,7 @@
-import img from "../images/death true strings.jpg"
-
 export default function Home(){
     return (
         <div>
-            <img src={img}/>
+            <h1 id="nome"> Olivier Messiaen </h1>
         </div>
     );
 }
