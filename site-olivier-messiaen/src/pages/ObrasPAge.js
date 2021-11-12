@@ -47,11 +47,11 @@ export default function PageObras(){
             <div className={ Styles.listaObras }>
                 {obras.map((obra)=>{
                     return (<Obra 
-                    id={obra.id} 
-                    titulo={obra.titulo}
-                    data={obra.data}
-                    instrumento={obra.instrumentos}
-                    url={obra.url}
+                        id={obra.id} 
+                        titulo={obra.titulo}
+                        data={obra.data}
+                        instrumento={obra.instrumentos}
+                        url={obra.url}
                     />)
                 })}
             </div>

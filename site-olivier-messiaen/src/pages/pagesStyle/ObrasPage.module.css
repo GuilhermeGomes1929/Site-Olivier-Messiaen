@@ -19,6 +19,7 @@
 .listaObras{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     background-color: rgba(63, 25, 0, 0.781);
     padding-top: 1rem;
 }
