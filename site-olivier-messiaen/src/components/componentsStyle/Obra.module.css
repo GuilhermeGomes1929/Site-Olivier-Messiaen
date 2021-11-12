@@ -1,0 +1,20 @@
+.umaObra{
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-bottom: 6rem;
+    flex-basis: 25%;
+}
+
+.umaObra_titulo{
+    color: white;
+    line-break: normal;
+    font-family: "Opera-Lyrics-Smooth";
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.umaObra_instrumento{
+    color: rgb(255, 246, 118);
+    font-family: "Opera-Lyrics-Smooth";
+    font-size: 1rem;
+}

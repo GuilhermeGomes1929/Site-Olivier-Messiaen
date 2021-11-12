@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "Regatto";
+    src: url(/src/fontes/RegattoBold-lgVM0.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#header{
+    height: 3.5rem;
+    background-color: rgba(63, 25, 0, 0.781);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+} 
+
+.header_item{
+    margin-right: 2rem;
+    color: rgb(255, 246, 118);
+    font-family: "Regatto";
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: 2px 0 black, 2px 0 black, 2px 0 black, 2px 0 black;
+}
+
+.header_item__botaoPesquisa{
+    margin-right: 2rem;
+    background-color: rgba(255, 255, 255, 0);
+    border-width: 0px;
+    margin-top: 5px;
+}

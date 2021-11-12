@@ -1,0 +1,25 @@
+#conteudo{
+    margin-top: 15rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+}
+
+#tituloPagina{
+    color: rgb(255, 246, 118);
+    font-family: "Opera-Lyrics-Smooth";
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    margin-right: 15rem;
+    margin-left: 15rem;
+    text-align: center;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+.listaObras{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgba(63, 25, 0, 0.781);
+    padding-top: 1rem;
+}
