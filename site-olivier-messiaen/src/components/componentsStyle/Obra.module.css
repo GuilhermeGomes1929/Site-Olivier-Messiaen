@@ -1,7 +1,8 @@
 .umaObra{
-    margin-left: 6rem;
-    margin-right: 6rem;
-    margin-bottom: 6rem;
+    margin-left: 1rem;
+    margin-top: 2.5rem;
+    margin-right: 1rem;
+    margin-bottom: 2.5rem;
     flex-basis: 25%;
 }
 
@@ -13,8 +14,16 @@
     font-style: italic;
 }
 
+.umaObra_data{
+    color: white;
+    font-size: 1rem;
+    font-family: "Regatto-Bold";
+    margin-left: 0.25rem;
+}
+
 .umaObra_instrumento{
     color: rgb(255, 246, 118);
     font-family: "Opera-Lyrics-Smooth";
     font-size: 1rem;
+    font-weight: lighter;
 }

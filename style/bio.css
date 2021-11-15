@@ -54,6 +54,11 @@ html, body{
     margin-top: 5px;
 }
 
+.bioInfo{
+    display: flex;
+    margin-top: 5rem;
+}
+
 #bioFoto{
     margin-top: 0.5rem;
     margin-left: 2rem;
@@ -63,11 +68,6 @@ html, body{
 .langIndicador{
     padding-left: 1rem;
     margin-left: 1rem;
-}
-
-.bioInfo{
-    display: flex;
-    margin-top: 5rem;
 }
 
 #bioTextoFlex{

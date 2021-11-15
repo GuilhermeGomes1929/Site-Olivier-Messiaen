@@ -1,10 +1,10 @@
-import MessiaenFoto from "../images/messiaenFoto.jpg"
+import Styles from "./componentsStyle/Biografia.module.css"
 
-export default function Biografia({ lingua, texto }) {
+export default function Biografia({ linguaBandeira, texto }) {
 
     return(
         <div className= { Styles.bio }>
-            <img className= { Styles.bio_lingua } src={ lingua } height="32.5rem" width="5%"></img>
+            <img className= { Styles.bio_lingua } src={ linguaBandeira } height="32.5rem" width="50rem"></img>
             <p className={ Styles.bio_texto }>{ texto }</p>
         </div>    
     )
