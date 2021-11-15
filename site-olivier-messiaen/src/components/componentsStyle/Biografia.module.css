@@ -1,0 +1,21 @@
+.bio{
+    display: flex;
+    flex-direction: column;
+}
+
+.bio_lingua{
+    padding-left: 1rem;
+    margin-left: 1rem;
+}
+
+
+.bio_texto{
+    color: rgb(255, 246, 118);
+    background-color: rgb(63, 25, 0);
+    font-family: "Opera-Lyrics-Smooth";
+    padding: 3rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 5rem;
+    border-radius: 0.4rem;
+}
