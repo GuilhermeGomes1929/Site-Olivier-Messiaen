@@ -13,14 +13,13 @@
     padding-bottom: 0.5rem;
     margin-right: 15rem;
     margin-left: 15rem;
-    margin-bottom: 10rem;
+    margin-bottom: 7.5rem;
     text-align: center;
 }
 .listaObras{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: rgba(63, 25, 0, 0.781);
     padding-top: 1rem;
     padding-bottom: 2rem;
 }
