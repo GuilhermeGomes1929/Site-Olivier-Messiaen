@@ -35,7 +35,7 @@
 
 #email{
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 2.5rem;
 }
 
 #email_link{
@@ -46,7 +46,4 @@
     font-size: 1.5rem;
     font-weight: bolder;
     font-family: sans-serif;
-}
-
-@media screen and (max-width: 600px){
 }
