@@ -22,7 +22,7 @@ html, body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: -2.5rem;
+    background-position-y: center;
     background-attachment: fixed;
     background-color: rgba(63, 58, 0, 0.644);
     background-blend-mode: soft-light;
@@ -31,7 +31,7 @@ html, body{
 
 .outrasPaginas{
     height: 3.5rem;
-    background-color: rgb(63, 25, 0);
+    background-color: rgba(63, 25, 0, 0.781);
     display: flex;
     justify-content: end;
     align-items: center;
@@ -55,12 +55,12 @@ html, body{
 }
 
 .listaObras{
-    
     margin-top: 15rem;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: auto;
 }
+
 .heading{
     color: rgb(255, 246, 118);
     background-color: rgba(63, 25, 0, 0.781);

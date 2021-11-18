@@ -12,25 +12,30 @@
     font-style: normal;
 }
 
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
 #conteudo{
-    margin: 0px;
-    background-color: rgba(63, 58, 0, 0.644);
     background-image: url(../images/orgaoFoto.jpg);
-    background-size: 86rem 22rem;
-    background-repeat: repeat-x;
-    background-position-x: 1,5rem;
-    background-position-y: 1,5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-attachment: fixed;
+    background-color: rgba(63, 58, 0, 0.644);
     background-blend-mode: soft-light;
     background-blend-mode: darken;
 }
 
 .outrasPaginas{
     height: 3.5rem;
-    background-color: rgb(63, 25, 0);
+    background-color: rgba(63, 25, 0, 0.781);
     display: flex;
     justify-content: end;
     align-items: center;
-} 
+}
 
 .itemOutrasPaginas{
     margin-right: 2rem;
@@ -49,18 +54,13 @@
     margin-top: 5px;
 }
 
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
 #nome{
-    margin: 0px;
-    font-size: 3.5rem;
-    text-align: top;
-    margin-top:9rem;
+    font-size: 2.3rem;
+    text-align: center;
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6rem;
     color: rgb(255, 246, 118);
     background-size: all;
     border-radius: 5rem;
@@ -68,48 +68,55 @@
     text-shadow: 0 1px black, 0 1px black, 0 1px black, 0 1px black;
 }
 
-#email{
-    font-size: 2.5rem;
-    text-align: top;
-    margin-top:5rem;
-    color: rgb(10, 10, 10);
-    background-size: all;
-    border-radius: 5rem;
-    font-family: "Opera-Lyrics-Smooth";
-    text-shadow: 0 1px black, 0 1px black, 0 1px black, 0 1px black;
+#linksContato{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    padding-bottom: 30rem;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    background-color: rgba(63, 25, 0, 0.781);
 }
 
-    #numero{
-    font-size: 2.5rem;
-    text-align: top;
-    margin-top: 4rem;
-    color: rgb(10, 10, 10);
-    background-size: all;
+#botoesContato{
+    margin-right: auto;
+    margin-left: auto;
+    border-color: blue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.umBotao{
+    background: transparent;
+    border-width: 0;
+}
+
+#fb{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.imagemBotao{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+}
+
+#emailContainer{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+#email{
+    background-color: rgba(255, 246, 118, 0.637);
+    padding-left: 1rem;
+    padding-right: 1rem;
     border-radius: 5rem;
-    font-family: "Opera-Lyrics-Smooth";
-    text-shadow: 0 1px black, 0 1px black, 0 1px black, 0 1px black;
-    }
-
-    #contato{
-    font-size: 2.5rem;
-    text-align: top;
-    margin-top:8rem;
-    color: rgb(10, 10, 10);
-    background-size: all;
-    border-radius: 5rem;
-    font-family: "Opera-Lyrics-Smooth";
-    text-shadow: 0 1px black, 0 1px black, 0 1px black, 0 1px black;
-    }
-
-    
-
-    
-
-
-
-
-
-    
-
-
-
+    color: rgb(52, 52, 158);
+    font-size: 1.5rem;
+    font-weight:bold;
+    font-family:sans-serif;
+}

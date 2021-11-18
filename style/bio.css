@@ -22,7 +22,7 @@ html, body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: -2.5rem;
+    background-position-y: center;
     background-attachment: fixed;
     background-color: rgba(63, 58, 0, 0.644);
     background-blend-mode: soft-light;
@@ -31,11 +31,11 @@ html, body{
 
 .outrasPaginas{
     height: 3.5rem;
-    background-color: rgb(63, 25, 0);
+    background-color: rgba(63, 25, 0, 0.781);
     display: flex;
     justify-content: end;
     align-items: center;
-} 
+}
 
 .itemOutrasPaginas{
     margin-right: 2rem;
@@ -54,6 +54,11 @@ html, body{
     margin-top: 5px;
 }
 
+.bioInfo{
+    display: flex;
+    margin-top: 5rem;
+}
+
 #bioFoto{
     margin-top: 0.5rem;
     margin-left: 2rem;
@@ -63,11 +68,6 @@ html, body{
 .langIndicador{
     padding-left: 1rem;
     margin-left: 1rem;
-}
-
-.bioInfo{
-    display: flex;
-    margin-top: 5rem;
 }
 
 #bioTextoFlex{
