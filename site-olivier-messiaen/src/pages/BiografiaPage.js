@@ -1,31 +1,30 @@
 import Biografia from "../components/Biografia"
 import MessiaenFoto from "../images/messiaenFoto.jpg"
 import Styles from "./pagesStyle/BiografiaPage.module.css"
-import BR from "../images/bandeiraBR.jpg"
-import USA from "../images/bandeiraUSA.jpg"
+import api from "../service/api"
+import React, { useState } from "react"
 
 
 export default function BioPage(){
 
-    let biografias = [
-        {
-            linguaBandeira: BR,
-            texto: "Nascido em 1908, na cidade de Avignon na França, o franco compositor, organista, professor e ornitólogo Oliver Eugène Prosper Charles Messiaen, Filho de um professor de literatura e tradutor de Shakespeare, e um poeta, CCIL Sauvage, Messiaen cresceu em um ambiente favorável a todas as expressões artísticas. Com seu talento precoce, ele estudou no Conservatório de Paris, onde estudou órgão e composição. Em 1936, ele foi um dos fundadores da Jeune France, um grupo dedicado à divulgação da nova música francesa. Foi designado organista na Igreja da Trinité de Paris em 1931, posto que ocupou até à sua morte. Durante a Batalha de França, Messiaen foi feito prisioneiro de guerra, e enquanto estava aprisionado compôs o Quatuor pour la fin du temps (\"Quarteto pelo fim do tempo\") para os quatro instrumentos disponíveis: piano, violino, violoncelo e clarinete."
-        },
-        {
-            linguaBandeira: USA,
-            texto: "Nascido em 1908, na cidade de Avignon na França, o franco compositor, organista, professor e ornitólogo Oliver Eugène Prosper Charles Messiaen, Filho de um professor de literatura e tradutor de Shakespeare, e um poeta, CCIL Sauvage, Messiaen cresceu em um ambiente favorável a todas as expressões artísticas. Com seu talento precoce, ele estudou no Conservatório de Paris, onde estudou órgão e composição. Em 1936, ele foi um dos fundadores da Jeune France, um grupo dedicado à divulgação da nova música francesa. Foi designado organista na Igreja da Trinité de Paris em 1931, posto que ocupou até à sua morte. Durante a Batalha de França, Messiaen foi feito prisioneiro de guerra, e enquanto estava aprisionado compôs o Quatuor pour la fin du temps (\"Quarteto pelo fim do tempo\") para os quatro instrumentos disponíveis: piano, violino, violoncelo e clarinete."
-        }
-    ]
+    const [listaDeBiografias, setListaDeBiografias] = useState([])
+
+    function getBios(){
+        api.get("/biografia/")
+        .then(response => { setListaDeBiografias(response.data) })
+        .catch(erro => { alert("Ainda não possui biografias cadastradas, por favor acesse /login para cadastrar biografias.")})
+    }
+
+    getBios()
 
     return(
         <div id={ Styles.bioLista }>
-            <img id={ Styles.bioLista_foto } src={ MessiaenFoto } height="30%" width="30%"></img>
+            <img alt="" id={ Styles.bioLista_foto } src={ MessiaenFoto } height="30%" width="30%"></img>
             <div>
-                {biografias.map((umaBio)=>{
+                {listaDeBiografias.map((bio)=>{
                     return(<Biografia 
-                        linguaBandeira = {umaBio.linguaBandeira}
-                        texto = {umaBio.texto}
+                        linguaBandeira = {bio.urlIcon}
+                        texto = {bio.texto}
                         />)
                 })}
             </div>

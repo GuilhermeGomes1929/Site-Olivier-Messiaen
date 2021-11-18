@@ -5,16 +5,16 @@ import Styles from "./componentsStyle/DefaultHeader.module.css";
 export default function DefaultHeader(){
     return(
         <header id={ Styles.header }>
-                <a> 
+                <a href="#/"> 
                     <Link to="/" className={ Styles.header_item }>Página principal</Link>
                 </a>
-                <a> 
+                <a href="#/"> 
                     <Link to="/biografia" className={ Styles.header_item }>Biografia</Link>
                 </a>
-                <a> 
+                <a href="#/"> 
                     <Link to="/obras" className={ Styles.header_item }>Obras</Link>
                 </a>
-                <a> 
+                <a href="#/"> 
                     <Link to="/contato" className={ Styles.header_item }>Contato</Link>
                 </a>
                 <button className={ Styles.header_item__botaoPesquisa } >

@@ -4,7 +4,7 @@ export default function Biografia({ linguaBandeira, texto }) {
 
     return(
         <div className= { Styles.bio }>
-            <img className= { Styles.bio_lingua } src={ linguaBandeira } height="32.5rem" width="50rem"></img>
+            <img alt="" className= { Styles.bio_lingua } src={ linguaBandeira } height="32.5rem" width="50rem"></img>
             <p className={ Styles.bio_texto }>{ texto }</p>
         </div>    
     )

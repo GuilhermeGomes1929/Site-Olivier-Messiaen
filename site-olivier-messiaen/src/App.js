@@ -1,23 +1,19 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import DefaultHeader from './components/DefaultHeader';
+import Biografia from './components/Biografia';
+import Obra from './components/Obra';
+import Admin from './pages/AdminPage';
 import Home from './pages/Home';
-import BioPage from './pages/BiografiaPage';
-import ObrasPage from './pages/ObrasPage';
-import ContatoPage from './pages/ContatoPage';
+import MainPage from './pages/MainPage';
+import Login from './pages/LoginPage';
+
 function App() {
 
   return (
    <Router>
-      <DefaultHeader/>
       <Routes>
-        <Route exact path="/" element={<Home/>}>
-        </Route>
-        <Route exact path="/biografia" element={<BioPage/>}>
-        </Route>
-        <Route path="/obras" element={<ObrasPage/>}>
-        </Route>
-        <Route path="/contato" element={<ContatoPage/>}>
-        </Route>
+        <Route path="/*" element={<MainPage/>}/>
+        <Route path="/admin/*" element={ <Admin/> }/>
+        <Route path="/login" element={ <Login/>} />
       </Routes>
    </Router>
   );
