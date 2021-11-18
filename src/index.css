@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  background-image: url(./images/orgaoFoto.jpg);
+  background-color: rgba(63, 58, 0, 0.644);
+  background-blend-mode: soft-light;
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

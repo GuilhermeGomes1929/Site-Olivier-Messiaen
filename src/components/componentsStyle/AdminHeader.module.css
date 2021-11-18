@@ -1,0 +1,21 @@
+.itemOutrasPaginas{
+    margin-right: 2rem;
+    color: rgb(255, 246, 118);
+    font-family: "Regatto";
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: 2px 0 black, 2px 0 black, 2px 0 black, 2px 0 black;
+}
+
+.cabecalho{
+    background-color: #4a2b20;
+    background-blend-mode: soft-light;
+    background-size: 100vw;
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 246, 118);
+}
