@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Site Olivier Messiaen
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Url - https://6196f6020a111d173667fde6--olivier-messiaen.netlify.app/
 
-## Available Scripts
+Esse site foi criado para apresentar o portifólio do compositor Olivier Messiaen.
 
-In the project directory, you can run:
+### O site possui as seguintes páginas:
 
-### `npm start`
+- Página inicial ("/")
+- Página de obras ("/obras")
+- Página de biografia ("/biografia")
+- Página de contato ("/contato")
+- Página de login ("/login")
+- Página de admin ("/admin")
+    - Página para editar, registrar e deletar obras ("/admin/obras")
+    - Página para editar, registrar e deletar biografia ("/admin/biografia")
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Esse site possui integração com uma Api REST desenvolvida utilizando o framework Spring na linguagem de programação Java.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+O deploy da Api foi feito utilizando o heroku
 
-### `npm test`
+### Obs.: Caso você queira fazer edições, vai ser necessário acessar a url https://6196f6020a111d173667fde6--olivier-messiaen.netlify.app/login e utilizar o usuário e senha admin
+### Usuário e senha genéricos porque o a criação do site tem como finalidade estudar
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tecnologias utilizadas:
 
-### `npm run build`
+- Html, css e javascript;
+- React.js;
+- Contamos com bibliotecas do react como "react-router-dom" e "axios";
+- Java;
+- Spring boot.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Sites utilizados para deploy:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Heroku (Api REST)
+- Netlify (Página React)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Caso queira testar na sua casa, seguir os seguintes passos:
 
-### `npm run eject`
+1. Clonar o repositório;
+2. Ter o npm instalado no seu computador;
+3. Entrar na pasta raiz do projeto pelo prompt de comandos;
+4. Executar o comando ``` npm install ```;
+5. Executar o comando ``` npm build ```;
+6. Executar o comando ``` npm start ```;
+7. Aguarde uns instantes e o navegador irá com a página funcional.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Considerações finais
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Foi muito divertido criar esse site e foi um tanto quanto desafiador. Nós, como uma equipe, passamos por algumas dificuldades, porém nos ajudamos e tentamos trocar conhecimentos sempre que podíamos.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+O site é bem básico, porém foi feito com carinho e com muita empolgação.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Agradecemos a Aeda (nossa professora de desenvolvimento web) por ter nos dado a oportunidade de aprender ainda mais.
 
-## Learn More
+## Integrantes do grupo:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Luis Guilherme Bezerra Gomes
+- João Lucas Veiga Monteiro
+- Ruan João de Morais
+- Oliver Limaverde de Melo
