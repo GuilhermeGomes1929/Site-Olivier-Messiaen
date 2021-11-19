@@ -55,7 +55,8 @@ Agradecemos a Aeda (nossa professora de desenvolvimento web) por ter nos dado a 
 
 ## Integrantes do grupo:
 
-- Luis Guilherme Bezerra Gomes- João Lucas Veiga Monteiro
+- Luis Guilherme Bezerra Gomes
+- João Lucas Veiga Monteiro
 - Ruan João de Morais
 - Oliver Limaverde de Melo
 - Pedro Guilherme Araújo Aragão
