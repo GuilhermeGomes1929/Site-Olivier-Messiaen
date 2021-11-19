@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "./static/css/main.cda231c2.chunk.css",
+    "main.js": "./static/js/main.9d4f1a8b.chunk.js",
+    "main.js.map": "./static/js/main.9d4f1a8b.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.86839e22.js",
+    "runtime-main.js.map": "./static/js/runtime-main.86839e22.js.map",
+    "static/js/2.65706ca0.chunk.js": "./static/js/2.65706ca0.chunk.js",
+    "static/js/2.65706ca0.chunk.js.map": "./static/js/2.65706ca0.chunk.js.map",
+    "static/js/3.7d952095.chunk.js": "./static/js/3.7d952095.chunk.js",
+    "static/js/3.7d952095.chunk.js.map": "./static/js/3.7d952095.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.cda231c2.chunk.css.map": "./static/css/main.cda231c2.chunk.css.map",
+    "static/js/2.65706ca0.chunk.js.LICENSE.txt": "./static/js/2.65706ca0.chunk.js.LICENSE.txt",
+    "static/media/R.6f6875fa.png": "./static/media/R.6f6875fa.png",
+    "static/media/DefaultHeader.module.css": "./static/media/RegattoBold-lgVM0.c330f82e.ttf",
+    "static/media/instagramLogo.de57de14.png": "./static/media/instagramLogo.de57de14.png",
+    "static/media/messiaenFoto.1a854e70.jpg": "./static/media/messiaenFoto.1a854e70.jpg",
+    "static/media/index.css": "./static/media/orgaoFoto.e767e7f2.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.86839e22.js",
+    "static/js/2.65706ca0.chunk.js",
+    "static/css/main.cda231c2.chunk.css",
+    "static/js/main.9d4f1a8b.chunk.js"
+  ]
+}
