@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import api from "../service/api";
 import Style from "./componentsStyle/AdminPageComponents.module.css"
 
@@ -11,6 +11,15 @@ export default function EditObras(){
     const [data, setData] = useState()
     const [instrumento, setInstrumento] = useState()
     const [url, setUrl] = useState()
+    const [idState, setIdState] = useState(false)
+    const [tituloState, setTituloState] = useState(false)
+    const [anoState, setAnoState] = useState(false)
+    const [urlState, setUrlState] = useState(false)
+    const [instrumentoState, setInstrumentoState] = useState(false)
+    const [deletarState, setDeletarState] = useState(false)
+    const [criarState, setCriarState] = useState(false)
+    const [editState, setEditState] = useState(true)
+
 
     function cadastrar(){
         api.post("https://olivier-messiaen.herokuapp.com/obra/registrar", {
@@ -64,6 +73,40 @@ export default function EditObras(){
         }
     }
 
+    function mudarAcao(valor){
+        setAcao(valor)
+
+        if(acao == "C"){
+            setCriarState(true)
+            setEditState(false)
+            setDeletarState(false)
+            setIdState(true)
+            setInstrumentoState(false)
+            setTituloState(false)
+            setUrlState(false)
+            setAnoState(false)
+        }else if(acao == "D"){
+            setCriarState(false)
+            setEditState(false)
+            setDeletarState(true)
+            setIdState(false)
+            setInstrumentoState(true)
+            setTituloState(true)
+            setUrlState(true)
+            setAnoState(true)
+        }else if (acao == "E"){
+            setCriarState(false)
+            setEditState(true)
+            setDeletarState(false)
+            setIdState(false)
+            setInstrumentoState(false)
+            setTituloState(false)
+            setUrlState(false)
+            setAnoState(false)
+        }
+
+    }
+
     return(
         <div className={Style.mainContainer}>
             <h1 className={Style.titulo}>Obras</h1>
@@ -74,7 +117,10 @@ export default function EditObras(){
                     <label><strong>Id da obra:</strong></label>
                 </div>
                 <div className={Style.campo}>
-                    <input onChange={(e) => { setId(e.target.value)}} type="number" name="idObra" id="idObra" min="0"/>        
+                    <input 
+                    disabled={idState}
+                    onChange={(e) => { setId(e.target.value)}} 
+                    type="number" name="idObra" id="idObra" min="0"/>        
                 </div>
             </div>
 
@@ -83,7 +129,7 @@ export default function EditObras(){
                     <label><strong>Título:</strong></label>
                 </div>
                 <div className={Style.campo}>
-                    <input onChange={(e) => { setTitulo(e.target.value)}} type="text" name="tituloObra" id="tituloObra"/>
+                    <input disabled={tituloState} onChange={(e) => { setTitulo(e.target.value)}} type="text" name="tituloObra" id="tituloObra"/>
                 </div>
             </div>
 
@@ -92,7 +138,7 @@ export default function EditObras(){
                     <label><strong>Ano de criação:</strong></label>
                 </div>
                 <div className={Style.campo}>
-                    <input onChange={(e) => { setData(e.target.value)}} type="number" name="dataObra" id="dataObra"/>
+                    <input disabled={anoState} onChange={(e) => { setData(e.target.value)}} type="number" name="dataObra" id="dataObra"/>
                 </div>
             </div>
 
@@ -101,7 +147,7 @@ export default function EditObras(){
                     <label><strong>Instrumentos:</strong></label>
                 </div>
                 <div className={Style.campo}>
-                    <input onChange={(e) => { setInstrumento(e.target.value)}} type="text" name="instrumentoObra" id="instrumentoObra"></input>
+                    <input disabled={instrumentoState} onChange={(e) => { setInstrumento(e.target.value)}} type="text" name="instrumentoObra" id="instrumentoObra"></input>
                 </div>
             </div>
 
@@ -110,7 +156,7 @@ export default function EditObras(){
                     <label><strong>Url:</strong></label>
                 </div>
                 <div className={Style.campo}>
-                    <input onChange={(e) => { setUrl(e.target.value)}} type="text" name="urlObra" id="urlObra"></input>
+                    <input disabled={urlState} onChange={(e) => { setUrl(e.target.value)}} type="text" name="urlObra" id="urlObra"></input>
                 </div>
             </div>
 
@@ -119,9 +165,15 @@ export default function EditObras(){
                     <label><strong>Ação:</strong></label>
                 </div>
                 <div className={Style.campo}>
-                    <input onClick={(e) => { setAcao("E")}} type="radio" name="acaoObra" id="acaoObraEditar" checked/>Editar
-                    <input onClick={(e) => { setAcao("C")}} type="radio" name="acaoObra" id="acaoObraCriar"/>Criar
-                    <input onClick={(e) =>{ setAcao("D") }} type="radio" name="acaoObra" id="acaoObraDeletar"/>Deletar
+                    <input
+                    checked={editState} 
+                    onChange={(e) => { mudarAcao("E")}} type="radio" />Editar
+                    <input
+                    checked={criarState}
+                    onChange={(e) => { mudarAcao("C")}} type="radio" />Criar
+                    <input
+                    checked={deletarState}
+                    onChange={(e) =>{ mudarAcao("D") }} type="radio" />Deletar
                 </div>
             </div>
 
